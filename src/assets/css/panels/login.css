@@ -7,11 +7,13 @@
 
 .login-tabs {
     position: absolute;
-    padding: 15px;
-    background: var(--background);
-    border-radius: 15px;
+    padding: 30px;
+    background: var(--background-element);
+    border: 1px solid rgba(220, 20, 60, 0.2);
+    border-radius: 20px;
     text-align: center;
     min-width: 40%;
+    box-shadow: 0 8px 32px var(--shadow);
 }
 
 .login-home,
@@ -23,28 +25,47 @@
 
 .login-text {
     font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--color);
 }
 
 .connect,
 .cancel {
-    background: none;
-    color: var(--color);
-    border: solid 4px var(--element-color);
+    background: var(--element-color);
+    color: #FFFFFF;
+    border: none;
     border-radius: 10px;
-    padding: 0.3rem 4rem;
+    padding: 0.7rem 4rem;
     font-size: inherit;
     font-weight: bold;
     margin: 15px 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.connect:hover,
+.cancel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(220, 20, 60, 0.4);
 }
 
 .input-login .email,
 .input-login .password,
 .A2F {
     color: var(--color);
-    background: none;
-    border: solid 2px var(--element-color);
-    border-radius: 30px;
+    background: var(--background);
+    border: 2px solid rgba(220, 20, 60, 0.3);
+    border-radius: 10px;
     width: 50%;
-    padding: 0.4rem 1rem;
+    padding: 0.7rem 1.2rem;
     margin-top: 10px;
+    transition: var(--transition);
+}
+
+.input-login .email:focus,
+.input-login .password:focus,
+.A2F:focus {
+    outline: none;
+    border-color: var(--element-color);
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.1);
 }

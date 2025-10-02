@@ -1,24 +1,24 @@
 .global {
-    --element-color: #00bd7a;
+    --element-color: #DC143C;
     --transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
-    --dark-color: #292929;
-    --light-color: rgb(245, 245, 245);
+    --dark-color: #0A0A0A;
+    --light-color: #F0F0F0;
 }
 
 .dark {
-    --color: #F5F5F5;
-    --background: #292929;
-    --background-element: #424242;
-    --background-transparent: #2c2c2ccc;
-    --shadow: rgba(25, 25, 25, 0.7);
-    --svg-color: brightness(0) saturate(100%) invert(100%) sepia(55%) saturate(23%) hue-rotate(236deg) brightness(108%) contrast(92%);
+    --color: #E8E8E8;
+    --background: #0A0A0A;
+    --background-element: #1C1C1C;
+    --background-transparent: #0F0F0Fcc;
+    --shadow: rgba(220, 20, 60, 0.2);
+    --svg-color: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 .light {
-    --color: #151515;
-    --background: rgb(245, 245, 245);
-    --background-element: #c2c2c2;
-    --background-transparent: rgba(204, 204, 204, 0.8);
-    --shadow: rgba(208, 208, 208, 0.7);
-    --svg-color: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(1719%) hue-rotate(357deg) brightness(94%) contrast(84%);
+    --color: #1A1A1A;
+    --background: #F0F0F0;
+    --background-element: #D8D8D8;
+    --background-transparent: rgba(240, 240, 240, 0.9);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --svg-color: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
 }
