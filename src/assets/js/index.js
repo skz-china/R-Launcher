@@ -30,10 +30,12 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n'est pas un os, mais un kernel.", "author": "Luuxis" }
-        ];
+        { "message": "Bienvenue sur R-Launcher.", "author": "Skizeun" },
+        { "message": "Optimisé pour une expérience Minecraft 1.8 fluide.", "author": "Skizeun" },
+        { "message": "Développé par des joueurs, pour des joueurs.", "author": "Skizeun" },
+        { "message": "Prépare-toi à entrer dans l'univers de Gloridia.", "author": "Skizeun" },
+        { "message": "R-Launcher, simplicité et performance réunies.", "author": "Skizeun" }
+    ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
         this.splashAuthor.children[0].textContent = "@" + splash.author;
