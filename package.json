@@ -1,8 +1,8 @@
 {
     "name": "r-launcher",
     "preductname": "R Launcher",
-    "version": "1.0.0",
-    "_comment_version": "À modifier à chaque fois la VERSION pour forcer une mise à jour, et tout le temps faire 'npm i' dans le cmd, pour initialiser",
+    "version": "1.0.1",
+    "_comment_version1": "À modifier à chaque fois la VERSION pour forcer une mise à jour, et tout le temps faire 'npm i' dans le cmd, pour initialiser",
     "description": "R-Launcher Minecraft.",
     "main": "src/app.js",
     "author": {
@@ -10,7 +10,8 @@
         "email": "contact@gloridia.fr",
         "url": "https://github.com/skz-china/R-Launcher"
     },
-    "url": "http://launcher.luuxis.fr",
+    "url": "http://localhost/R-Launcher-WEB-Folder/",
+    "_comment_version2": "Le site doit etre bien lier par defaut http://launcher.luuxis.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",

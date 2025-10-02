@@ -26,11 +26,7 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-        { "message": "Bienvenue sur R-Launcher.", "author": "Skizeun" },
-        { "message": "Optimisé pour une expérience Minecraft 1.8 fluide.", "author": "Skizeun" },
-        { "message": "Développé par des joueurs, pour des joueurs.", "author": "Skizeun" },
-        { "message": "Prépare-toi à entrer dans l'univers de Gloridia.", "author": "Skizeun" },
-        { "message": "R-Launcher, simplicité et performance réunies.", "author": "Skizeun" }
+        { "message": "Bienvenue sur R-Launcher.", "author": "Skizeun" }
     ];
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -52,7 +48,7 @@ class Splash {
         this.setStatus(`Recherche de mise à jour...`);
 
         ipcRenderer.invoke('update-app').then().catch(err => {
-            return this.shutdown(`erreur lors de la recherche de mise à jour :<br>${err.message}`);
+            return this.shutdown(`Erreur lors de la recherche de mise à jour :<br>${err.message}`);
         });
 
         ipcRenderer.on('updateAvailable', () => {
